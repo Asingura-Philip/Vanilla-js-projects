@@ -1,0 +1,10 @@
+.nav-center{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.btn{
+    background-color: brown;
+}
