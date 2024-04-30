@@ -1,0 +1,21 @@
+div{
+    background-color: aqua;
+    border-radius: 100px;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    
+}
+p{
+    
+    border-radius: 50px;
+    background-color: azure;
+}
+h1{
+    align-items: center;
+    padding-left: 90px;
+}
+button{
+    padding: 10px;   
+    margin: 30px;
+}
