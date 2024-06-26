@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function(){
     return false;
 
 } 
-
+    document.querySelector('#clear').onclick = function(){
+        location.reload();
+    }
 
 
 
