@@ -29,14 +29,7 @@ document.addEventListener('DOMContentLoaded',function(){
         }
             document.querySelector('#millicount').innerHTML = milliSecCounter;
      }, 10);
-
-
-    
-
-
-
-
-     
+  
 }
     document.querySelector('#start').onclick = milliCount;
     document.querySelector('#stop').onclick = function(){
@@ -45,12 +38,6 @@ document.addEventListener('DOMContentLoaded',function(){
     document.querySelector('#reset').onclick = function(){
         location.reload();
     }
-    
-    
-
-    
-
-
 
 })
 ;
