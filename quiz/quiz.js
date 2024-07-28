@@ -14,27 +14,27 @@ console.log(form1.c.checked)
 console.log(form1.d.checked)
 // console.log(answerA.checked)
 
-function limita(fName){//doesnt check c+d
-    if((fName.b.checked == true && fName.d.checked == true) || (fName.b.checked == true && fName.c.checked == true)|| (fName.c.checked == true && fName.d.checked == true)){
-        alert("you can only select two values")
+function limita(fName){
+    if(fName.b.checked == true || fName.c.checked == true || fName.d.checked == true){
+        alert("you can only select one answer")
         fName.a.checked = false
     }
 }
-function limitb(fName){//doesnt check c+d
-    if((fName.a.checked == true && fName.c.checked == true) || (fName.a.checked == true && fName.d.checked == true)|| (fName.c.checked == true && fName.d.checked == true)){
-        alert("you can only select two values")
+function limitb(fName){
+    if(fName.a.checked == true || fName.c.checked == true || fName.d.checked == true){
+        alert("you can only select one answer")
         fName.b.checked = false
     }
 }
-function limitc(fName){//doesnt check b+d
-    if((fName.a.checked == true && fName.b.checked == true) || (fName.a.checked == true && fName.d.checked == true)|| (fName.b.checked == true && fName.d.checked == true)){
-        alert("you can only select two values")
+function limitc(fName){
+    if(fName.a.checked == true || fName.b.checked == true || fName.d.checked == true){
+        alert("you can only select one answer")
         fName.c.checked = false
     }
 }
-function limitd(fName){//doesnt check b+c
-    if((fName.a.checked == true && fName.b.checked == true) || (fName.a.checked == true && fName.c.checked == true)|| (fName.b.checked == true && fName.c.checked == true)){
-        alert("you can only select two values")
+function limitd(fName){
+    if(fName.b.checked == true || fName.c.checked == true || fName.a.checked == true){
+        alert("you can only select one answer")
         fName.d.checked = false
     }
 }
