@@ -1,39 +1,37 @@
-let answerA = document.querySelector("#a")
-let answerB = document.querySelector("#b")
-let answerC = document.querySelector("#c")
-let answerD = document.querySelector("#d")
-let form = document.getElementById("qnForm")
+let answerA = document.querySelector(".a")
+let answerB = document.querySelector(".b")
+let answerC = document.querySelector(".c")
+let answerD = document.querySelector(".d")
+let form1 = document.getElementById("qn1Form")
+let form2 = document.getElementById("qn2Form")
 
-console.log(form.a.checked)
-console.log(form.b.checked)
-console.log(form.c.checked)
-console.log(form.d.checked)
+console.log(form1.a.checked)
+console.log(form1.b.checked)
+console.log(form1.c.checked)
+console.log(form1.d.checked)
 // console.log(answerA.checked)
 
-
-
-
-function limita(){
-    if((form.b.checked == true && form.d.checked == true) || (form.b.checked == true && form.c.checked == true)){
+function limita(fName){//doesnt check c+d
+    if((fName.b.checked == true && fName.d.checked == true) || (fName.b.checked == true && fName.c.checked == true)|| (fName.c.checked == true && fName.d.checked == true)){
         alert("you can only select two values")
-        form.a.checked = false
+        fName.a.checked = false
     }
 }
-function limitb(){
-    if((form.a.checked == true && form.c.checked == true) || (form.a.checked == true && form.d.checked == true)){
+function limitb(fName){//doesnt check c+d
+    if((fName.a.checked == true && fName.c.checked == true) || (fName.a.checked == true && fName.d.checked == true)|| (fName.c.checked == true && fName.d.checked == true)){
         alert("you can only select two values")
-        form.b.checked = false
+        fName.b.checked = false
     }
 }
-function limitc(){
-    if((form.a.checked == true && form.b.checked == true) || (form.a.checked == true && form.d.checked == true)){
+function limitc(fName){//doesnt check b+d
+    if((fName.a.checked == true && fName.b.checked == true) || (fName.a.checked == true && fName.d.checked == true)|| (fName.b.checked == true && fName.d.checked == true)){
         alert("you can only select two values")
-        form.c.checked = false
+        fName.c.checked = false
     }
 }
-function limitd(){
-    if((form.a.checked == true && form.b.checked == true) || (form.a.checked == true && form.c.checked == true)){
+function limitd(fName){//doesnt check b+c
+    if((fName.a.checked == true && fName.b.checked == true) || (fName.a.checked == true && fName.c.checked == true)|| (fName.b.checked == true && fName.c.checked == true)){
         alert("you can only select two values")
-        form.d.checked = false
+        fName.d.checked = false
     }
 }
